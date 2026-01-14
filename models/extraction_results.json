@@ -1,8 +1,16 @@
 [
   {
     "image": "17000006_NAR_2015_EEQsDZu_page_1.png",
-    "extraction": {},
-    "accuracy": 0.0
+    "extraction": {
+      "Blood_group": "O",
+      "Rhesus": "Pos",
+      "Anti_D": "Y",
+      "Name": "Redacted",
+      "IP_No": "2330184",
+      "DOB": "07011985",
+      "Age": "N/A"
+    },
+    "accuracy": 0.07
   },
   {
     "image": "17000006_NAR_2015_EEQsDZu_page_2.png",
