@@ -1,0 +1,1 @@
+### Getting the outputs from the qwen.py and med-gemma.py from multiple records and then merge them to one json file
