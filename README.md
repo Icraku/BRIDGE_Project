@@ -1,9 +1,5 @@
 #### Install the reuirements of this project ---> ***pip install -r requirements.txt***
 
-
-
-### TO DO: FIX THE VALIDATION FOR EAC SCHEMA, CHECK THE VARIABLES AND THE STRUCTURE
-
 ### Project Pipeline:
 1) Pdf ---> Png {converter.py} [Input 00]
 2) Png ---> RedCAP or temporatry storage for image storage [Final Input]
