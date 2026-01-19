@@ -1,0 +1,201 @@
+{
+  "promptF_row3": {
+    "prediction": {
+      "Blood group": "A",
+      "Rhesus": "Pos",
+      "Anti D": "Y"
+    },
+    "truth": {
+      "Blood_group": "O",
+      "Rhesus": "Pos",
+      "Anti_D": "N"
+    },
+    "accuracy": 0.333
+  },
+  "promptD_row1": {
+    "prediction": {
+      "Name_label": "Name",
+      "Name_value": "N/A",
+      "IP_No_label": "IP No.",
+      "IP_No_value": "2330184"
+    },
+    "truth": {
+      "Name_label": "Name",
+      "Name_value": "N/A",
+      "IP_No_label": "IP No.",
+      "IP_No_value": "2330184"
+    },
+    "accuracy": 1.0
+  },
+  "promptA_labels": {
+    "prediction": "",
+    "truth": [
+      "Name",
+      "IP No.",
+      "Age (years)",
+      "Parity",
+      "Gravida",
+      "EDD",
+      "Blood group",
+      "Rhesus",
+      "Anti D",
+      "ANC no. of visits",
+      "ANC Clinic Name:",
+      "ANC U/S",
+      "If YES, trimester",
+      "U/S findings:",
+      "VDRL",
+      "PMTCT status",
+      "Mother on ARVs",
+      "Hep B",
+      "Hep B IG given",
+      "HTN in pregnancy?",
+      "APH",
+      "Diabetes",
+      "Prolonged 2nd Stage?",
+      "Infection (UTI/Fever)",
+      "Antibiotics",
+      "Multiple Gestation",
+      "Number of babies",
+      "Current maternal drugs:",
+      "Other problems during this pregnancy:",
+      "Problems in previous pregnancies:",
+      "Relevant family/social history:"
+    ],
+    "accuracy": 0.0
+  },
+  "promptC_ip_no": {
+    "prediction": {
+      "ip_no": "2330184"
+    },
+    "truth": "2330184",
+    "accuracy": 0.0
+  },
+  "prompt_baseline": {
+    "prediction": "",
+    "truth": {
+      "Name": "N/A",
+      "IP No.": "2330184",
+      "Age (years)": "34",
+      "Parity": "0 + 3",
+      "Gravida": "4",
+      "EDD": "13-01-2025",
+      "Blood group": "O",
+      "Rhesus": "Pos",
+      "Anti D": "N/A",
+      "ANC no. of visits": "6",
+      "ANC Clinic Name": "N/A",
+      "ANC U/S": "Y",
+      "If YES, trimester": "N/A",
+      "U/S findings": "N/A",
+      "VDRL": "Neg",
+      "PMTCT status": "Neg",
+      "Mother on ARVs": "N/A",
+      "Hep B": "Neg",
+      "Hep B IG given": "N/A",
+      "HTN in pregnancy?": "Y",
+      "APH": "N",
+      "Diabetes": "Y",
+      "Prolonged 2nd Stage?": "N/A",
+      "Infection (UTI/Fever)": "Y",
+      "Antibiotics": "N/A",
+      "Multiple Gestation": "N",
+      "Number of babies": "N/A",
+      "Current maternal drugs": "Iams, metformin, MgSO4, nifedipine, labetalol",
+      "Other problems during this pregnancy": "methyldopa",
+      "Problems in previous pregnancies": "N/A",
+      "Relevant family/social history": "N/A"
+    },
+    "accuracy": 0.0
+  },
+  "promptE_row2": {
+    "prediction": {
+      "Age_years": "34",
+      "Parity": "0 + 3",
+      "Gravida": "4",
+      "EDD": "03-25"
+    },
+    "truth": {
+      "Age_years": "34",
+      "Parity": "0 + 3",
+      "Gravida": "4",
+      "EDD": "13/01/2025"
+    },
+    "accuracy": 0.75
+  },
+  "test_whole": {
+    "prediction": "",
+    "truth": null,
+    "accuracy": 0.0
+  },
+  "trial": {
+    "prediction": {
+      "Name": "N/A",
+      "Age (years)": "34",
+      "Parity": "0 + 3",
+      "Gravida": "4",
+      "EDD": "N/A",
+      "Blood group": "O",
+      "Rhesus": "Pos",
+      "Anti D": "Y",
+      "ANC no. of visits": "6",
+      "ANC Clinic Name": "N/A",
+      "U/S findings": "N/A",
+      "VDRL": "Pos",
+      "PMTC status": "N/A"
+    },
+    "truth": {
+      "Name": "N/A",
+      "IP No.": "2330184",
+      "Age (years)": "34",
+      "Parity": "0 + 3",
+      "Gravida": "4",
+      "EDD": "13-01-2025",
+      "Blood group": "O",
+      "Rhesus": "Pos",
+      "Anti D": "N/A",
+      "ANC no. of visits": "6",
+      "ANC Clinic Name": "N/A",
+      "ANC U/S": "Y",
+      "If YES, trimester": "N/A",
+      "U/S findings": "N/A",
+      "VDRL": "Neg",
+      "PMTCT status": "Neg",
+      "Mother on ARVs": "N/A",
+      "Hep B": "Neg",
+      "Hep B IG given": "N/A",
+      "HTN in pregnancy?": "Y",
+      "APH": "N",
+      "Diabetes": "Y",
+      "Prolonged 2nd Stage?": "N/A",
+      "Infection (UTI/Fever)": "Y",
+      "Antibiotics": "N/A",
+      "Multiple Gestation": "N",
+      "Number of babies": "N/A",
+      "Current maternal drugs": "Iams, metformin, MgSO4, nifedipine, labetalol",
+      "Other problems during this pregnancy": "methyldopa",
+      "Problems in previous pregnancies": "N/A",
+      "Relevant family/social history": "N/A"
+    },
+    "accuracy": 0.29
+  },
+  "promptB_section_entry": {
+    "prediction": {
+      "Name": "Redacted"
+    },
+    "truth": [
+      "Name",
+      "Redacted"
+    ],
+    "accuracy": 0.0
+  },
+  "whole": {
+    "prediction": "Based on the provided medical record structure, I have extracted all visible label\u2013value pairs for each section. The extraction is based on standard medical record conventions, where abbreviations and shorthand are common in clinical documentation. Values marked as \"N/A\" indicate that the field was either not populated or not visible in the record. Note that \"Parity\" (Gravida/Para) is expressed as \"Gravida X, Para Y\" (e.g., \"2 + 3\"), as per medical terminology, and abbreviations like \"Ron\", \"LbW\", etc., are interpreted as per common clinical shorthand.\n\n---\n\n### **Section A: Infant Details**  \n*(Contains data specific to the newborn infant)*  \n- **Name**: N/A  \n- **IP No.**: 2331074  \n- **Date of Admission**: 18-11-2824  \n- **Time baby seen**: 00:04 (00 hours, 04 minutes; likely admission time)  \n- **Sex**: M (Male)  \n- **DOB**: 17-11-2024  \n- **Time of birth**: 23:11 (23 hours, 11 minutes; e.g., 11:11 PM)  \n- **Gestation (weeks)**: 32  \n- **Gestation type**: U/S (Unspecified/Unknown; e.g., \"U/S\" commonly denotes \"Unspecified\" in gestational records)  \n- **Age (infant)**: 0 (likely in hours/days; \"0\" suggests the infant is newly born)  \n- **APGAR**: 6, 5, 7, 9 (APGAR scores at 1, 5, and 10 minutes; note: APGAR typically has three scores, but \"6, 5, 7, 9\" may include additional data or a typo)  \n- **Place of birth**: KNH (Kanpur National Hospital; abbreviation for institution name)  \n- **Baby from**: Theatre (indicating delivery occurred in the operating theatre)  \n- **Reason for referral**: Ron, LbW, RDS, IOM  \n  - **Ron**: Likely \"Referral\" (e.g., \"R\" for Referral in medical abbreviations)  \n  - **LbW**: Low Birth Weight (a clinical concern)  \n  - **RDS**: Respiratory Distress Syndrome (a condition requiring monitoring)  \n  - **IOM**: Infant of Mother (though less common; may imply \"Infant of Mother\" or similar context)  \n\n---\n\n### **Section B: Mother's Details**  \n*(Contains data specific to the mother)*  \n- **Name**: N/A  \n- **Parity**: 2 + 3 (Gravida 2, Para 3; meaning \"2 pregnancies, 3 deliveries\")  \n- **Age**: N/A  \n- **Height**: N/A  \n- **Weight**: N/A  \n- **Gravida**: 2 (Total pregnancies, including current)  \n- **Para**: 3 (Total deliveries, including current)  \n- **Other**: N/A (No additional maternal data visible)  \n\n---\n\n### **Section C: Labour and Birth Details**  \n*(Contains data specific to the delivery process)*  \n- **Delivery method**: vaginal  \n- **Gestation age**: 39 weeks  \n- **Other**: N/A (No additional birth details visible)  \n\n---\n\n### **Key Notes on the Extraction**:  \n1. **\"N/A\" Fields**: These indicate missing or unavailable data in the record. For example:  \n   - Age, height, and weight were not specified in the record.  \n   - No maternal name or other identifiers were provided.  \n2. **Abbreviations**: Clinical shorthand (e.g., \"U/S\", \"APGAR\", \"Ron\", \"LbW\") is retained as-is, consistent with standard medical documentation.  \n3. **Gestation Type**: \"U/S\" is interpreted as \"Unspecified\" (common in obstetrics for unclear gestational status).  \n4. **Parity**: \"2 + 3\" follows medical convention (Gravida/Para notation), where \"Gravida\" refers to the total number of pregnancies (including current), and \"Para\" refers to the number of deliveries (including current).  \n5. **Time Formats**: Times are given in \"HH:MM\" format (e.g., \"00:04\" for 4 minutes after admission), which is standard in healthcare records.  \n\nThis extraction is based solely on the visible information in the record structure provided. If additional fields were present in the original record (e.g., maternal history, blood pressure, or fetal heart rate), they would be included here, but they were not specified in the input.",
+    "truth": null,
+    "accuracy": 0.0
+  },
+  "_overall": {
+    "num_prompts": 10,
+    "overall_accuracy": 0.237
+  }
+}

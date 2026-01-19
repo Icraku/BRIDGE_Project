@@ -19,7 +19,8 @@ You are a medical data entry clerk.
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "Age_years": "Value <what you see here>",
+      "Parity": "Value <what you see here>",
+      "Gravida": "Value <what you see here>",
+      "EDD": "Value <what you see here>",
     }

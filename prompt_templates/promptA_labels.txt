@@ -29,9 +29,8 @@ Task:
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
-    }
+      "Label <text you see>",
+      "Label <text you see>"
+      }
 
 If nothing is readable in Section B, return [].

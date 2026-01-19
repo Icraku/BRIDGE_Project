@@ -5,8 +5,7 @@ Your task is to navigate the image and confirm that you have entered the correct
 Steps:
 1) Locate the bold black header whose text begins EXACTLY with:
        B: Mother’s
-   - Ignore all other occurrences of the word “Mother”.
-   - Ignore “Mother on ARVs?”, “Mother currently…”, and everything in Section C.
+   - Ignore everything in Section C.
 
 2) Once you find the correct header, identify the FIRST printed label directly beneath it.
 
@@ -20,7 +19,7 @@ Steps:
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "Label": "Value",
+      "Label": "Value",
     }
+

@@ -16,10 +16,9 @@ Once inside Section B:
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "ip_no": "Value <what you see here>"
     }
+
 
 If blank, unreadable, or missing, return "N/A".
 Return digits only.

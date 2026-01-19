@@ -18,11 +18,9 @@ Your task:
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "Label": "Value",
+      "Label": "Value",
     }
-
 
 4. STRICT OUTPUT RULE:
    - Do NOT summarize.

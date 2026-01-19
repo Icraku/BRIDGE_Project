@@ -18,7 +18,7 @@ Determine which option is checked and return only that option for the checkboxes
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "Label": "Value",
+      "Label": "Value",
     }
+

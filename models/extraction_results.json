@@ -11,25 +11,5 @@
       "Age": "N/A"
     },
     "accuracy": 0.07
-  },
-  {
-    "image": "17000006_NAR_2015_EEQsDZu_page_2.png",
-    "extraction": {},
-    "accuracy": 0.0
-  },
-  {
-    "image": "17000006_NAR_2015_EEQsDZu_page_3.png",
-    "extraction": {},
-    "accuracy": 0.0
-  },
-  {
-    "image": "17000006_NAR_2015_EEQsDZu_page_4.png",
-    "extraction": {},
-    "accuracy": 0.0
-  },
-  {
-    "image": "17000006_NAR_2015_EEQsDZu_page_5.png",
-    "extraction": {},
-    "accuracy": 0.0
   }
 ]

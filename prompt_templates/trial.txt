@@ -24,9 +24,9 @@ Task:
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "Label": "Value",
+      "Label": "Value",
     }
+
 
 6) If a value is blank, missing, unclear, or unreadable → return: N/A and if nothing is readable in Section B, return [].

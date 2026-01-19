@@ -18,9 +18,11 @@ Rules:
 
     Expected format:
     {
-      "Name": "",
-      "IP_No": "",
-      "DOB": ""
+      "Name_label": "Value <what you see here>",
+      "Name_value": "Value <what you see here>",
+      "IP_No_label": "Value <what you see here>",
+      "IP_No_value": "Value <what you see here>",
     }
+
 
 If unreadable, use "N/A".

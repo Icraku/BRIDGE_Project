@@ -134,8 +134,7 @@ def list_to_dict(pred_list):
     return d
 
 # ------------------------
-
-
+# Load Prompts
 
 def load_prompts():
     """
@@ -180,12 +179,12 @@ def merge_predictions(pred_list):
         if isinstance(pred, list):
             pred = list_to_dict(pred)
         elif not isinstance(pred, dict):
-            # If it's a plain string or unexpected type, skip
+            # skip if it's a plain string or unexpected type,
             continue
 
         for key, value in pred.items():
             if key in merged:
-                # Only replace if current value is empty or 'N/A'
+                # Standardize by replacing current value if empty or 'N/A'
                 if merged[key] in ["", "N/A", None] and value not in ["", "N/A", None]:
                     merged[key] = value
             else:
@@ -235,10 +234,15 @@ def run_all():
                     options={"seed": 42}
                 )
             except Exception as e:
-                print(f"❌ Failed to get response for {prompt_name}: {e}")
+                print(f" Failed to get response for {prompt_name}: {e}")
                 continue
 
             output_text = response["message"]["content"]
+
+            # Print raw output from model
+            print("Raw model output:\n", output_text)
+
+            # Print the standardized JSON output
             cleaned = clean_json_output(output_text)
 
             try:
@@ -246,6 +250,10 @@ def run_all():
             except Exception:
                 # fallback: keep raw string or list
                 prediction = cleaned
+
+            # Print cleaned prediction
+            print("Cleaned prediction:\n",
+                      json.dumps(prediction, indent=2) if isinstance(prediction, dict) else prediction)
 
             # Map prompt name to GT key
             if "_baseline" in prompt_name or "trial" in prompt_name or "whole" in prompt_name:
@@ -271,12 +279,17 @@ def run_all():
             accuracy = compute_accuracy(prediction, truth) if truth else None
 
             if accuracy is not None:
+                print(f"Accuracy vs GT ({gt_key}): {accuracy}")
                 image_accuracies.append(accuracy)
 
             image_predictions.append(prediction)
 
         # Merge all predictions into a single extraction
         merged_extraction = merge_predictions(image_predictions)
+
+        # Print merged output for specific image
+        print("\n>>> Merged extraction for this image:")
+        print(json.dumps(merged_extraction, indent=2))
 
         # Compute overall image accuracy
         overall_accuracy = round(sum(image_accuracies) / len(image_accuracies), 3) if image_accuracies else 0.0
@@ -289,14 +302,15 @@ def run_all():
 
         final_results.append(result)
 
-        # Print nicely per image
+        # Final result
+        print("\n=== Final result for this image ===")
         print(json.dumps(result, indent=2))
 
     # Save final results
     with open("extraction_results.json", "w") as f:
         json.dump(final_results, f, indent=2)
 
-    print("\n✅ Saved extraction_results.json with", len(final_results), "images.")
+    print("\n Saved extraction_results.json with", len(final_results), "images.")
 
 
 if __name__ == "__main__":
